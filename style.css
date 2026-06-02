@@ -1,7 +1,8 @@
 /* logo */
 .logo img{
-    width: 170px;
+    width: 140px;
     height: auto;
+    max-width: 100%;
 }
 *{
     margin: 0;
@@ -24,7 +25,7 @@ body{
     align-items: center;
     padding: 20px 8%;
     background: #A60321;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -292,4 +293,153 @@ footer{
 
 .whatsapp-float:hover{
     transform: scale(1.1);
+}
+
+/* ========================= */
+/* RESPONSIVE TABLETS */
+/* ========================= */
+@media screen and (max-width: 1024px){
+
+    .navbar{
+        padding: 15px 5%;
+    }
+
+    .hero-content h2{
+        font-size: 3rem;
+    }
+
+    .services,
+    .about,
+    .pricing,
+    .contact{
+        padding: 100px 5%;
+    }
+
+}
+
+/* ========================= */
+/* RESPONSIVE CELULARES */
+/* ========================= */
+@media screen and (max-width: 768px){
+
+    /* Navbar */
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo img{
+        width: 130px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn-nav{
+        display: none;
+    }
+
+    /* Hero */
+    .hero{
+        min-height: 100vh;
+        padding-top: 150px;
+    }
+
+    .hero-content h2{
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Títulos */
+    .section-title{
+        font-size: 2rem;
+    }
+
+    /* Servicios */
+    .services-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* Nosotros */
+    .about h2{
+        font-size: 2rem;
+    }
+
+    .about p{
+        font-size: 1rem;
+    }
+
+    /* Tabla */
+    table{
+        min-width: 350px;
+    }
+
+    th,
+    td{
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Contacto */
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+
+    input,
+    textarea{
+        width: 100%;
+    }
+
+    /* WhatsApp */
+    .whatsapp-float{
+        width: 55px;
+        height: 55px;
+        font-size: 1.6rem;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    footer{
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+}
+
+/* ========================= */
+/* CELULARES PEQUEÑOS */
+/* ========================= */
+@media screen and (max-width: 480px){
+
+    .hero-content h2{
+        font-size: 1.9rem;
+    }
+
+    .section-title{
+        font-size: 1.8rem;
+    }
+
+    .card{
+        padding: 30px 20px;
+    }
+
 }
