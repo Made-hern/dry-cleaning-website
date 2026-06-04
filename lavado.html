@@ -3,76 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precios | Lavados y Servicios Dry Cleaning</title>
+    <title>Lavados y Servicios Dry Cleaning</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
+ <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+           <div class="logo">
+                <img src="img/logo2.png" alt="Logo Dry Cleaning">
+            </div>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/logo2.png" alt="Logo Dry Cleaning">
-        </div>
-           <ul class="nav-links">
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="index.html">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
+                 <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
                  <li><a href="promociones.html">promociones</a></li>
                 <li><a href="precios.html">Precios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
 
             <a href="#contacto" class="btn-nav">Cotizar</a>
-    </nav>
-</header>
 
-<section class="pricing-page">
+        </nav>
+    </header>
+ <!-- HERO SECTION -->
+    <section class="inicio-hero" id="inicio-hero">
 
-    <h1>Lavado Industrial e Institucional</h1>
+        <div class="hero-content">
+            <h2>Servicio Institucional e Industrial</h2>
 
-    <div class="table-container">
+            <p>
+                Nuestro servicio industrial e institucional está diseñado para atender las necesidades de empresas, hoteles, restaurantes, hospitales, clínicas, salones de eventos y otras organizaciones que requieren el lavado profesional de grandes volúmenes de textiles.
+                Ofrecemos procesos eficientes, calidad constante y entregas puntuales para garantizar la higiene y presentación de cada pieza.
+            </p>
 
-        <table>
+        </div>
 
-            <tr>
-                <th>Servicio</th>
-                <th>Precio</th>
-            </tr>
+    </section>
 
-            <tr>
-                <td>Lavado por libra</td>
-                <td>Q15</td>
-            </tr>
+       <!-- NOSOTROS -->
+    <section class="about" id="nosotros">
 
-            <tr>
-                <td>Planchado</td>
-                <td>Q10</td>
-            </tr>
+        <div class="about-content">
+            <h2></h2>
 
-            <tr>
-                <td>Edredones</td>
-                <td>Q60</td>
-            </tr>
+            <p>
+                Contamos con la capacidad para procesar grandes cantidades de mantelería, toallas, uniformes y otros textiles de uso institucional, garantizando limpieza profesional, cumplimiento de estándares de higiene, atención personalizada y entregas confiables que se adaptan a las necesidades de cada cliente.
+            </p>
+            <p>
+                    Ideal para
+                    Hoteles
+                    Restaurantes
+                    Cafeterías
+                    Hospitales y clínicas
+                    Salones de eventos
+                    Gimnasios
+                    Empresas y oficinas
+                    Centros educativos
+            </p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/50247481835" class="btn-secondary">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Atención personalizada
+                </a>
+            </div>
 
-            <tr>
-                <td>Servicio Express</td>
-                <td>Q25</td>
-            </tr>
+        </div>
 
-        </table>
+    </section>
 
-    </div>
+    <!-- SERVICIOS -->
+    <section class="drycleaning" id="drycleaning">
+
+        <h2 class="section-dry">¡Somos el aliado estratégico para el cuidado y presentación de los textiles que representan la imagen de su organización!</h2>
 
 </section>
+     <!-- CONTACTO -->
+    <section class="contact" id="contacto">
 
-<footer>
-    <p>© 2026 Lavados y Servicios Dry Cleaning</p>
-</footer>
+        <h2 class="section-title">Contáctanos</h2>
 
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <p><i class="fa-brands fa-whatsapp"></i> +502 4748-1835</p>
+                <p><i class="fa-brands fa-instagram"></i> @</p>
+                <p><i class="fa-solid fa-location-dot"></i> Ciudad, Guatemala</p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="tel" placeholder="número de telefono" required>
+                <textarea placeholder="Escribe tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+
+    </section>
+ <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Lavados y Servicios Dry Cleaning | Todos los derechos reservados</p>
+    </footer>
+
+
+    <!-- BOTON WHATSAPP -->
+    <a href="https://wa.me/50247481835" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="scrip.js"></script>
 </body>
 </html>

@@ -69,7 +69,6 @@ body{
     background:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url('https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=2070&auto=format&fit=crop');
-
     background-size: cover;
     background-position: center;
 
@@ -523,4 +522,129 @@ footer{
     .btn-nav{
         display: none;
     }
+}
+
+
+/* inicio hero */
+.inicio-hero{
+    height: 80vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 20px;
+}
+/* drycleaning */
+.drycleaning{
+    padding: 2px 3%;
+}
+.section-dry{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3px;
+    color: #0319a6;
+    font-family: 'Playfair Display', serif;
+}
+
+/* PAGINA PROMOCIONES */
+
+.promotions-page{
+    padding: 180px 8% 100px;
+    min-height: 100vh;
+}
+
+.promotions-page h1{
+    text-align: center;
+    color: #A60321;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.promo-description{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+.promotions-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.promo-card{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.promo-card:hover{
+    transform: translateY(-5px);
+}
+
+.promo-card h2{
+    color: #A60321;
+    margin-bottom: 15px;
+}
+
+.promo-contact{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.1rem;
+}
+
+/* ========================= */
+/* ANIMACION DE ENTRADA */
+/* ========================= */
+
+.loader{
+    position: fixed;
+    inset: 0;
+    background: #F2E9D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.loader img{
+    width: 320px;
+    animation: moverLogo 3s forwards;
+}
+
+#contenido{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#contenido.show{
+    opacity: 1;
+}
+
+@keyframes moverLogo{
+
+    0%{
+        transform: translate(0,0) scale(1);
+    }
+
+    65%{
+        transform: translate(0,0) scale(1);
+    }
+
+    100%{
+        transform: translate(-42vw,-35vh) scale(0.45);
+    }
+
 }
