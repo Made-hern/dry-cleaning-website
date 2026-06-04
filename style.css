@@ -24,7 +24,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background: #A60321;
+    background: #8C5C3;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -43,7 +43,7 @@ body{
 
 .nav-links a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -65,7 +65,7 @@ body{
 }
 /* HERO */
 .hero{
-    height: 100vh;
+    height: 80vh;
     background:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url('https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=2070&auto=format&fit=crop');
@@ -190,35 +190,6 @@ body{
     line-height: 1.8;
     margin-bottom: 20px;
 }
-/* PRECIOS */
-.pricing{
-    padding: 120px 8%;
-}
-
-.table-container{
-    overflow-x: auto;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-th{
-    background: #A60321;
-    color: white;
-}
-th, td{
-    padding: 20px;
-    text-align: center;
-}
-
-tr:nth-child(even){
-    background: #f7f7f7;
-}
 
 /* CONTACT */
 .contact{
@@ -295,6 +266,30 @@ footer{
     transform: scale(1.1);
 }
 
+/* pbx */
+.pbx-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 30px;
+    background: #253cd3;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.pbx-float:hover{
+    transform: scale(1.1);
+}
+
 /* ========================= */
 /* RESPONSIVE TABLETS */
 /* ========================= */
@@ -324,9 +319,10 @@ footer{
 
     /* Navbar */
     .navbar{
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
     }
 
     .logo img{
@@ -442,4 +438,89 @@ footer{
         padding: 30px 20px;
     }
 
+}
+
+/* PAGINA DE PRECIOS */
+
+.pricing-page{
+    padding: 180px 8% 100px;
+    min-height: 100vh;
+}
+
+.pricing-page h1{
+    text-align: center;
+    color: #A60321;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+/*boton de precios*/
+.btn-small{
+    display: inline-block;
+    background: #A60321;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn-small:hover{
+    background: #8C5C32;
+    transform: translateY(-3px);
+}
+
+/* MENU HAMBURGUESA */
+
+.menu-toggle{
+    display: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* CELULAR */
+@media screen and (max-width: 768px){
+
+    .navbar{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .logo img{
+        width: 120px;
+        height: auto;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #8C5C32;
+        padding: 20px 0;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .btn-nav{
+        display: none;
+    }
 }
