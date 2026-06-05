@@ -10,211 +10,261 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+
     <!-- PANTALLA DE CARGA -->
-<div class="loader">
-    <img src="img/logo2.png" alt="Logo Dry Cleaning">
-</div>
+    <div class="loader">
+        <img src="img/logo2.png" alt="Logo Dry Cleaning">
+    </div>
 
-<div id="contenido">
- <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-           <div class="logo">
-                <img src="img/logo2.png" alt="Logo Dry Cleaning">
+    <div id="contenido">
+
+        <!-- NAVBAR -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-dot"></div>
+                    <img src="img/logo2.png" alt="Logo Dry Cleaning">
+                </div>
+
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+
+                <a href="#contacto" class="btn-nav">Cotizar</a>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg"></div>
+            <div class="hero-accent"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-star"></i> Servicio profesional en Guatemala
+                </div>
+                <h1>Cuidamos tus<br>prendas <em>como nuevas</em></h1>
+                <p>Servicio profesional de lavado, secado y planchado con atención rápida, confiable y de calidad.</p>
+                <div class="hero-btns">
+                    <a href="#contacto" class="btn-primary">Solicitar Servicio</a>
+                    <a href="https://wa.me/50247481835" class="btn-wa">
+                        <i class="fa-brands fa-whatsapp"></i> Atención personalizada
+                    </a>
+                </div>
             </div>
-
-            <div class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">+500</span>
+                    <div class="stat-label">Clientes</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">10+</span>
+                    <div class="stat-label">Servicios</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <div class="stat-label">Garantía</div>
+                </div>
             </div>
+        </section>
 
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                 <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                 <li><a href="promociones.html">promociones</a></li>
-                <li><a href="precios.html">Precios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-
-            <a href="#contacto" class="btn-nav">Cotizar</a>
-
-        </nav>
-    </header>
- <!-- HERO SECTION -->
-    <section class="hero" id="inicio">
-
-        <div class="hero-content">
-            <h2>Cuidamos tus prendas como nuevas</h2>
-
-            <p>
-                Servicio profesional de lavado, secado y planchado con atención rápida,
-                confiable y de calidad.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">Solicitar Servicio</a>
-                <a href="https://wa.me/50247481835" class="btn-secondary">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Atención personalizada
-                </a>
+        <!-- MARQUEE / BANDA DE SERVICIOS -->
+        <div class="marquee-bar">
+            <span class="marquee-star">✦</span>
+            <div class="marquee-wrap">
+                <div class="marquee-track">
+                    <span>Lavado Institucional</span><span class="marquee-star">✦</span>
+                    <span>Dry Cleaning</span><span class="marquee-star">✦</span>
+                    <span>Planchado</span><span class="marquee-star">✦</span>
+                    <span>Edredones</span><span class="marquee-star">✦</span>
+                    <span>Servicio a Domicilio Gratis</span><span class="marquee-star">✦</span>
+                    <span>Mantelería y Toallas</span><span class="marquee-star">✦</span>
+                    <span>Costuras</span><span class="marquee-star">✦</span>
+                    <!-- Duplicado para loop infinito -->
+                    <span>Lavado Institucional</span><span class="marquee-star">✦</span>
+                    <span>Dry Cleaning</span><span class="marquee-star">✦</span>
+                    <span>Planchado</span><span class="marquee-star">✦</span>
+                    <span>Edredones</span><span class="marquee-star">✦</span>
+                    <span>Servicio a Domicilio Gratis</span><span class="marquee-star">✦</span>
+                    <span>Mantelería y Toallas</span><span class="marquee-star">✦</span>
+                    <span>Costuras</span><span class="marquee-star">✦</span>
+                </div>
             </div>
+            <span class="marquee-star">✦</span>
         </div>
 
-    </section>
-
-       <!-- NOSOTROS -->
-    <section class="about" id="nosotros">
-
-        <div class="about-content">
-            <h2>Sobre Nosotros</h2>
-
-            <p>
-                En Lavados y Servicios Dry Cleaning trabajamos para brindar limpieza profesional,
-                puntualidad y el mejor cuidado para cada prenda.
-            </p>
-
-            <p>
-                Nuestro objetivo es ofrecer un servicio elegante, rápido y confiable
-                para todos nuestros clientes.
-            </p>
-        </div>
-
-    </section>
-
-<!-- SERVICIOS -->
-    <section class="services" id="servicios">
-
-        <h2 class="section-title">Nuestros Servicios</h2>
-
-        <div class="services-container">
-
-            <div class="card">
-                <i class="fa-solid fa-shirt"></i>
-                <h3>Lavado Institucional e Industrial</h3>
-                <p>Limpieza profesional para todo tipo de prendas.</p>
-                 <a href="lavado.html" class="btn-small">
-                    Ver información
-                </a>
+        <!-- NOSOTROS -->
+        <section class="about" id="nosotros">
+            <div class="about-text">
+                <div class="section-label">Sobre Nosotros</div>
+                <h2>Elegancia en cada prenda que tratamos</h2>
+                <p>En Lavados y Servicios Dry Cleaning trabajamos para brindar limpieza profesional, puntualidad y el mejor cuidado para cada prenda.</p>
+                <p>Nuestro objetivo es ofrecer un servicio elegante, rápido y confiable para todos nuestros clientes en Guatemala.</p>
             </div>
-
-            <div class="card">
-                <i class="fa-solid fa-wind"></i>
-                <h3>Lavado y Secado</h3>
-                <p>Secado rápido y seguro para tus prendas.</p>
-
-                <a href="precios.html" class="btn-small">
-                    Ver Lista de Precios
-                </a>
+            <div class="about-visual">
+                <div class="about-img"></div>
+                <div class="about-tag">
+                    <p>"Cada prenda merece el cuidado que merece su dueño."</p>
+                    <cite>— Lavados &amp; Servicios Dry Cleaning</cite>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <i class="fa-solid fa-shirt"></i>
-                <h3>Planchado</h3>
-                <p>Acabados impecables y presentación elegante.</p>
-                 <a href="precios.html" class="btn-small">
-                    Ver Lista de Precios
-                </a>
+        <!-- SERVICIOS -->
+        <section class="services" id="servicios">
+            <div class="section-label light">Lo que ofrecemos</div>
+            <h2 class="section-title-light">Nuestros Servicios</h2>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-shirt"></i></div>
+                    <h3>Lavado Institucional e Industrial</h3>
+                    <p>Limpieza profesional para todo tipo de prendas a gran escala.</p>
+                    <a href="lavado.html" class="service-link">Ver información <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-wind"></i></div>
+                    <h3>Lavado y Secado</h3>
+                    <p>Secado rápido y seguro con los mejores equipos del mercado.</p>
+                    <a href="precios.html" class="service-link">Ver precios <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-fire-flame-simple"></i></div>
+                    <h3>Planchado</h3>
+                    <p>Acabados impecables y presentación elegante en cada prenda.</p>
+                    <a href="precios.html" class="service-link">Ver precios <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-bed"></i></div>
+                    <h3>Edredones</h3>
+                    <p>Lavado profundo especializado para prendas grandes.</p>
+                    <a href="precios.html" class="service-link">Ver precios <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-soap"></i></div>
+                    <h3>Mantelería y Toallas</h3>
+                    <p>Ideal para negocios, hoteles y eventos especiales.</p>
+                    <a href="precios.html" class="service-link">Ver precios <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h3>Costuras</h3>
+                    <p>Reparaciones y costuras menores con acabado profesional.</p>
+                    <a href="precios.html" class="service-link">Ver precios <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3>Dry Cleaning</h3>
+                    <p>Limpieza en seco para prendas delicadas y de alta calidad.</p>
+                    <a href="drycleanin.html" class="service-link">Ver información <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                    <h3>Otros Servicios</h3>
+                    <p>Tenemos más servicios disponibles para ti.</p>
+                    <a href="servicios.html" class="service-link">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-item highlight">
+                    <div class="service-icon"><i class="fa-solid fa-truck"></i></div>
+                    <h3>Servicio a Domicilio</h3>
+                    <p>Recogemos y entregamos tus prendas — <strong>sin costo adicional</strong>.</p>
+                    <a href="#contacto" class="service-link">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
-            <div class="card">
-                <i class="fa-solid fa-bed"></i>
-                <h3>Edredones</h3>
-                <p>Lavado profundo para prendas grandes.</p>
-                 <a href="precios.html" class="btn-small">
-                    Ver Lista de Precios
-                </a>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact" id="contacto">
+            <div class="contact-inner">
+                <div class="contact-info-col">
+                    <div class="section-label">Contáctanos</div>
+                    <h2>¿Listo para un<br>servicio de primera?</h2>
+                    <p>Escríbenos o llámanos, respondemos rápido. También puedes venir directamente a nuestras instalaciones.</p>
+
+                    <div class="contact-detail">
+                        <div class="detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="detail-text">
+                            <p>WhatsApp</p>
+                            <p>+502 4748-1835</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="detail-text">
+                            <p>Teléfono</p>
+                            <p>+502 2367-2867</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="detail-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="detail-text">
+                            <p>Instagram</p>
+                            <p>@drycleaninggt</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="detail-text">
+                            <p>Ubicación</p>
+                            <p>Ciudad de Guatemala</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" placeholder="Tu número" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">Enviar mensaje</button>
+                    </form>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <i class="fa-solid fa-soap"></i>
-                <h3>Mantelería y Toallas</h3>
-                <p>Ideal para negocios y eventos.</p>
-                 <a href="precios.html" class="btn-small">
-                    Ver Lista de Precios
-                </a>
-            </div>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-logo">Dry Cleaning</div>
+            <p>© 2026 Lavados y Servicios Dry Cleaning · Todos los derechos reservados</p>
+        </footer>
 
-            <div class="card">
-                <i class="fa-solid fa-scissors"></i>
-                <h3>Costuras</h3>
-                <p>Ideal para costuras menores.</p>
-                 <a href="precios.html" class="btn-small">
-                    Ver Lista de Precios
-                </a>
-            </div>
+        <!-- BOTÓN WHATSAPP FLOTANTE -->
+        <a href="https://wa.me/50247481835" class="float-btn float-wa" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
 
-            <div class="card">
-                <i class="fa-solid fa-scissors"></i>
-                <h3>dry Cleaning</h3>
-                <p>Ideal para costuras menores.</p>
-                 <a href="drycleanin.html" class="btn-small">
-                    Ver información
-                </a>
-            </div>
+        <!-- BOTÓN TELÉFONO FLOTANTE -->
+        <a href="tel:+50223672867" class="float-btn float-call" aria-label="Llamar">
+            <i class="fa-solid fa-phone"></i>
+        </a>
 
-             <div class="card">
-                <i class="fa-solid fa-truck"></i>
-                <h3>Otros servicios</h3>
-                <p>haz click para ver otros servicios.</p>
-                 <a href="servicios.html" class="btn-small">
-                    Ver servicios
-                </a>
-            </div>
+    </div><!-- fin #contenido -->
 
-             <div class="card">
-                <i class="fa-solid fa-truck"></i>
-                <h3>Servicio a Domicilio gratis</h3>
-                <p>Recogemos y entregamos tus prendas.</p>
-            </div>
-
-        </div>
-</section>
-
-     <!-- CONTACTO -->
-    <section class="contact" id="contacto">
-
-        <h2 class="section-title">Contáctanos</h2>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-                <p><i class="fa-brands fa-whatsapp"></i> +502 4748-1835</p>
-                <p><i class="fa-brands fa-instagram"></i> @</p>
-                <p><i class="fa-solid fa-location-dot"></i> Ciudad, Guatemala</p>
-            </div>
-
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="tel" placeholder="número de telefono" required>
-                <textarea placeholder="Escribe tu mensaje"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-
-        </div>
-
-    </section>
- <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Lavados y Servicios Dry Cleaning | Todos los derechos reservados</p>
-    </footer>
-
-
-    <!-- BOTON WHATSAPP -->
-    <a href="https://wa.me/50247481835" class="whatsapp-float">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <a href="tel:+50223672867" class="pbx-float">
-        <i class="fa-solid fa-phone"></i>
-    </a>
-
-</div>
     <script src="scrip.js"></script>
 </body>
-
 </html>
