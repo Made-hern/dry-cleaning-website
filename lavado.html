@@ -3,128 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lavados y Servicios Dry Cleaning</title>
+    <title>Lavado Institucional e Industrial | Lavados y Servicios Dry Cleaning</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
- <!-- NAVBAR -->
+<body class="lav-body">
+
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar">
-           <div class="logo">
+            <div class="logo">
+                <div class="logo-dot"></div>
                 <img src="img/logo2.png" alt="Logo Dry Cleaning">
             </div>
-
-            <div class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
+            <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
                 <li><a href="index.html#servicios">Servicios</a></li>
-                 <li><a href="promociones.html">promociones</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
                 <li><a href="precios.html">Precios</a></li>
                 <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
-
-            <a href="#contacto" class="btn-nav">Cotizar</a>
-
+            <a href="index.html#contacto" class="btn-nav">Cotizar</a>
         </nav>
     </header>
- <!-- HERO SECTION -->
-    <section class="inicio-hero" id="inicio-hero">
 
-        <div class="hero-content">
-            <h2>Servicio Institucional e Industrial</h2>
-
-            <p>
-                Nuestro servicio industrial e institucional está diseñado para atender las necesidades de empresas, hoteles, restaurantes, hospitales, clínicas, salones de eventos y otras organizaciones que requieren el lavado profesional de grandes volúmenes de textiles.
-                Ofrecemos procesos eficientes, calidad constante y entregas puntuales para garantizar la higiene y presentación de cada pieza.
-            </p>
-
+    <!-- HERO -->
+    <section class="lav-hero">
+        <div class="lav-hero-bg"></div>
+        <div class="lav-hero-overlay"></div>
+        <div class="lav-hero-content">
+            <div class="lav-hero-badge">
+                <i class="fa-solid fa-building"></i> Para empresas y negocios
+            </div>
+            <h1>Lavado<br><em>Institucional</em><br>e Industrial</h1>
+            <p>Soluciones de lavandería a gran escala para hoteles, restaurantes, hospitales, empresas y cualquier negocio que exija limpieza profesional, puntual y confiable.</p>
+            <a href="https://wa.me/50247481835" class="lav-btn-wa">
+                <i class="fa-brands fa-whatsapp"></i> Atención personalizada
+            </a>
         </div>
-
+        <div class="lav-hero-side">
+            <div class="lav-side-line"></div>
+            <span class="lav-side-text">Servicio profesional para empresas</span>
+            <div class="lav-side-line"></div>
+        </div>
     </section>
 
-       <!-- NOSOTROS -->
-    <section class="about" id="nosotros">
+    <!-- QUÉ ES -->
+    <section class="lav-what">
+        <div class="lav-what-inner">
+            <div class="lav-what-text">
+                <div class="section-label">¿Qué es?</div>
+                <h2>Lavandería profesional<br>a <em>escala empresarial</em></h2>
+                <p>El lavado institucional e industrial es un servicio especializado diseñado para atender las necesidades de limpieza de empresas, instituciones y negocios que manejan grandes volúmenes de ropa y textiles de forma regular.</p>
+                <p>A diferencia del lavado doméstico, este servicio utiliza equipos industriales de alta capacidad, productos profesionales y procesos estandarizados que garantizan resultados consistentes, higiénicos y de alta calidad en cada entrega.</p>
+                <p>Nos adaptamos a los horarios y requerimientos de cada cliente, ofreciendo un servicio confiable, puntual y con la frecuencia que tu negocio necesita.</p>
+            </div>
+            <div class="lav-what-visual">
+                <div class="lav-what-img"></div>
+                <div class="lav-what-stats">
+                    <div class="lav-stat">
+                        <span class="lav-stat-num">500+</span>
+                        <span class="lav-stat-label">Kg procesados<br>por semana</span>
+                    </div>
+                    <div class="lav-stat-div"></div>
+                    <div class="lav-stat">
+                        <span class="lav-stat-num">100%</span>
+                        <span class="lav-stat-label">Puntualidad<br>garantizada</span>
+                    </div>
+                    <div class="lav-stat-div"></div>
+                    <div class="lav-stat">
+                        <span class="lav-stat-num">24h</span>
+                        <span class="lav-stat-label">Tiempo de<br>respuesta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="about-content">
-            <h2></h2>
+    <!-- SECTORES QUE ATENDEMOS -->
+    <section class="lav-sectors">
+        <div class="lav-sectors-header">
+            <div class="section-label light">A quién servimos</div>
+            <h2>Sectores que<br>atendemos</h2>
+            <p>Trabajamos con empresas de todos los tamaños y rubros que necesitan un servicio de lavandería confiable y profesional.</p>
+        </div>
+        <div class="lav-sectors-grid">
 
-            <p>
-                Contamos con la capacidad para procesar grandes cantidades de mantelería, toallas, uniformes y otros textiles de uso institucional, garantizando limpieza profesional, cumplimiento de estándares de higiene, atención personalizada y entregas confiables que se adaptan a las necesidades de cada cliente.
-            </p>
-            <p>
-                    Ideal para
-                    Hoteles
-                    Restaurantes
-                    Cafeterías
-                    Hospitales y clínicas
-                    Salones de eventos
-                    Gimnasios
-                    Empresas y oficinas
-                    Centros educativos
-            </p>
-            <div class="hero-buttons">
-                <a href="https://wa.me/50247481835" class="btn-secondary">
+            <div class="lav-sector-card" data-delay="0">
+                <div class="lav-sector-icon"><i class="fa-solid fa-hotel"></i></div>
+                <h3>Hoteles y Hospedajes</h3>
+                <p>Sábanas, fundas, toallas, manteles y uniformes del personal con entregas programadas para no interrumpir tu operación.</p>
+            </div>
+
+            <div class="lav-sector-card" data-delay="100">
+                <div class="lav-sector-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Restaurantes y Cafeterías</h3>
+                <p>Uniformes de cocina, delantales, mantelería y servilletas. Lavado e higienización con estándares de la industria alimentaria.</p>
+            </div>
+
+            <div class="lav-sector-card" data-delay="200">
+                <div class="lav-sector-icon"><i class="fa-solid fa-hospital"></i></div>
+                <h3>Clínicas y Consultorios</h3>
+                <p>Batas, uniformes médicos y textiles que requieren procesos de higienización especiales y manejo responsable.</p>
+            </div>
+
+            <div class="lav-sector-card" data-delay="300">
+                <div class="lav-sector-icon"><i class="fa-solid fa-spa"></i></div>
+                <h3>Spas y Salones</h3>
+                <p>Toallas, batas de clientes y uniformes del equipo. Lavado con suavizante premium para una experiencia impecable.</p>
+            </div>
+
+            <div class="lav-sector-card" data-delay="400">
+                <div class="lav-sector-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Colegios e Instituciones</h3>
+                <p>Uniformes, ropa de educación física, manteles de comedor y más, con servicio semanal o quincenal según necesidad.</p>
+            </div>
+
+            <div class="lav-sector-card" data-delay="500">
+                <div class="lav-sector-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Empresas y Oficinas</h3>
+                <p>Uniformes corporativos, ropa de trabajo y cualquier textil de uso empresarial con servicio a domicilio incluido.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRENDAS QUE MANEJAMOS -->
+    <section class="lav-garments">
+        <div class="lav-garments-inner">
+            <div class="lav-garments-left">
+                <div class="section-label">Prendas y textiles</div>
+                <h2>¿Qué tipos de prendas<br>manejamos?</h2>
+                <p>Nuestro servicio está capacitado para procesar todo tipo de textiles empresariales, desde prendas delicadas hasta ropa de trabajo pesado.</p>
+                <a href="https://wa.me/50247481835" class="lav-btn-consult">
                     <i class="fa-brands fa-whatsapp"></i>
-                    Atención personalizada
+                    Consultar para mi negocio
                 </a>
             </div>
-
-        </div>
-
-    </section>
-
-    <!-- SERVICIOS -->
-    <section class="drycleaning" id="drycleaning">
-
-        <h2 class="section-dry">¡Somos el aliado estratégico para el cuidado y presentación de los textiles que representan la imagen de su organización!</h2>
-
-</section>
-     <!-- CONTACTO -->
-    <section class="contact" id="contacto">
-
-        <h2 class="section-title">Contáctanos</h2>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-                <p><i class="fa-brands fa-whatsapp"></i> +502 4748-1835</p>
-                <p><i class="fa-brands fa-instagram"></i> @</p>
-                <p><i class="fa-solid fa-location-dot"></i> Ciudad, Guatemala</p>
+            <div class="lav-garments-right">
+                <div class="lav-garment-group">
+                    <div class="lav-garment-group-title">
+                        <i class="fa-solid fa-shirt"></i> Uniformes y ropa de trabajo
+                    </div>
+                    <div class="lav-garment-tags">
+                        <span>Uniformes de cocina</span>
+                        <span>Delantales</span>
+                        <span>Batas médicas</span>
+                        <span>Uniformes escolares</span>
+                        <span>Ropa corporativa</span>
+                        <span>Overoles industriales</span>
+                        <span>Filipinas</span>
+                        <span>Pantalones de trabajo</span>
+                    </div>
+                </div>
+                <div class="lav-garment-group">
+                    <div class="lav-garment-group-title">
+                        <i class="fa-solid fa-bed"></i> Ropa de cama y baño
+                    </div>
+                    <div class="lav-garment-tags">
+                        <span>Sábanas y fundas</span>
+                        <span>Toallas de baño</span>
+                        <span>Toallas de mano</span>
+                        <span>Batas de spa</span>
+                        <span>Almohadas</span>
+                        <span>Cobertores</span>
+                    </div>
+                </div>
+                <div class="lav-garment-group">
+                    <div class="lav-garment-group-title">
+                        <i class="fa-solid fa-soap"></i> Mantelería y textil decorativo
+                    </div>
+                    <div class="lav-garment-tags">
+                        <span>Manteles de restaurante</span>
+                        <span>Servilletas de tela</span>
+                        <span>Caminos de mesa</span>
+                        <span>Cortinas</span>
+                        <span>Cubre sillas</span>
+                        <span>Faldones decorativos</span>
+                    </div>
+                </div>
             </div>
-
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="tel" placeholder="número de telefono" required>
-                <textarea placeholder="Escribe tu mensaje"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-
         </div>
-
     </section>
- <!-- FOOTER -->
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="lav-why">
+        <div class="lav-why-header">
+            <div class="section-label light">Nuestras ventajas</div>
+            <h2>¿Por qué elegirnos<br>para tu empresa?</h2>
+        </div>
+        <div class="lav-why-grid">
+            <div class="lav-why-item" data-delay="0">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Recolección y entrega gratis</h3>
+                <p>Vamos a tu negocio, recogemos y entregamos sin costo extra. Tú solo te preocupas por tu operación.</p>
+            </div>
+            <div class="lav-why-item" data-delay="100">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>Servicio programado</h3>
+                <p>Definimos juntos los días y horarios de recolección y entrega que mejor se adapten a tu negocio.</p>
+            </div>
+            <div class="lav-why-item" data-delay="200">
+                <i class="fa-solid fa-industry"></i>
+                <h3>Equipos industriales</h3>
+                <p>Máquinas de alta capacidad que garantizan limpieza profunda, desinfección y resultados consistentes.</p>
+            </div>
+            <div class="lav-why-item" data-delay="300">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Precio por volumen</h3>
+                <p>Entre más volumen, mejor tarifa. Ofrecemos precios especiales y paquetes personalizados para cada cliente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="lav-cta">
+        <div class="lav-cta-inner">
+            <div class="lav-cta-text">
+                <div class="section-label light">Hablemos</div>
+                <h2>¿Tu negocio necesita<br>un servicio de lavandería<br><em>confiable?</em></h2>
+                <p>Cuéntanos cuánto volumen manejas, qué tipo de prendas y con qué frecuencia necesitas el servicio. Te damos una propuesta personalizada sin costo y sin compromiso.</p>
+            </div>
+            <div class="lav-cta-actions">
+                <a href="https://wa.me/50247481835" class="lav-cta-wa">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Solicitar cotización
+                </a>
+                <a href="tel:+50223672867" class="lav-cta-call">
+                    <i class="fa-solid fa-phone"></i>
+                    Llamar ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Lavados y Servicios Dry Cleaning | Todos los derechos reservados</p>
+        <div class="footer-logo">Dry Cleaning</div>
+        <p>© 2026 Lavados y Servicios Dry Cleaning · Todos los derechos reservados</p>
     </footer>
 
-
-    <!-- BOTON WHATSAPP -->
-    <a href="https://wa.me/50247481835" class="whatsapp-float">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <!-- FLOTANTES -->
+    <a href="https://wa.me/50247481835" class="float-btn float-wa"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:+50223672867" class="float-btn float-call"><i class="fa-solid fa-phone"></i></a>
 
     <script src="scrip.js"></script>
 </body>

@@ -8,27 +8,56 @@ if(menuToggle){
     });
 }
 
-// ANIMACION DE CARGA
-window.addEventListener("load", () => {
+// ANIMACIÓN DE ENTRADA AL HACER SCROLL (página de precios)
+const animateOnScroll = () => {
+    const elements = document.querySelectorAll(".price-category");
+    if (!elements.length) return;
+ 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                // Pequeño delay escalonado por categoría
+                setTimeout(() => {
+                    entry.target.classList.add("visible");
+                }, i * 80);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+ 
+    elements.forEach(el => observer.observe(el));
+};
+ 
+animateOnScroll();
+ // ===========================
+// ANIMACIONES AL HACER SCROLL
+// Página: Dry Cleaning
+// ===========================
 
-    const loader = document.querySelector(".loader");
-    const contenido = document.getElementById("contenido");
+document.addEventListener("DOMContentLoaded", () => {
 
-    if(loader && contenido){
+    // Seleccionamos todos los elementos animables
+    const animTargets = document.querySelectorAll(
+        ".dc-benefit-item, .dc-step"
+    );
 
-        setTimeout(() => {
+    if (!animTargets.length) return;
 
-            loader.style.opacity = "0";
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
 
-            setTimeout(() => {
+                // Delay escalonado según data-delay
+                const delay = entry.target.dataset.delay || 0;
+                setTimeout(() => {
+                    entry.target.classList.add("visible");
+                }, parseInt(delay));
 
-                loader.style.display = "none";
-                contenido.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
 
-            }, 800);
-
-        }, 3000);
-
-    }
+    animTargets.forEach(el => observer.observe(el));
 
 });

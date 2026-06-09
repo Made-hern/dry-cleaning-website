@@ -8,71 +8,272 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+<body class="prices-body">
 
-<body>
-
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/logo2.png" alt="Logo Dry Cleaning">
-        </div>
-           <ul class="nav-links">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-dot"></div>
+                <img src="img/logo2.png" alt="Logo Dry Cleaning">
+            </div>
+            <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="index.html">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                 <li><a href="promociones.html">promociones</a></li>
-                <li><a href="precios.html">Precios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="precios.html" class="active">Precios</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
+            <a href="index.html#contacto" class="btn-nav">Cotizar</a>
+        </nav>
+    </header>
 
-            <a href="#contacto" class="btn-nav">Cotizar</a>
-    </nav>
-</header>
+    <!-- HERO DE PRECIOS -->
+    <section class="prices-hero">
+        <div class="prices-hero-bg"></div>
+        <div class="prices-hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-tag"></i> Precios transparentes
+            </div>
+            <h1>Lista de<br><em>Precios</em></h1>
+            <p>Sin sorpresas. Sin costos ocultos.<br>Calidad profesional al mejor precio de Guatemala.</p>
+        </div>
+        <div class="prices-hero-scroll">
+            <span>Ver precios</span>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </section>
 
-<section class="pricing-page">
-
-    <h1>Lista de Precios</h1>
-
-    <div class="table-container">
-
-        <table>
-
-            <tr>
-                <th>Servicio</th>
-                <th>Precio</th>
-            </tr>
-
-            <tr>
-                <td>Lavado por libra</td>
-                <td>Q15</td>
-            </tr>
-
-            <tr>
-                <td>Planchado</td>
-                <td>Q10</td>
-            </tr>
-
-            <tr>
-                <td>Edredones</td>
-                <td>Q60</td>
-            </tr>
-
-            <tr>
-                <td>Servicio Express</td>
-                <td>Q25</td>
-            </tr>
-
-        </table>
-
+    <!-- NOTA DOMICILIO -->
+    <div class="free-delivery-bar">
+        <i class="fa-solid fa-truck"></i>
+        <span><strong>Servicio a domicilio gratis</strong> — Recogemos y entregamos tus prendas sin costo adicional</span>
+        <a href="https://wa.me/50247481835" class="free-delivery-cta">
+            <i class="fa-brands fa-whatsapp"></i> Solicitar ahora
+        </a>
     </div>
 
-</section>
+    <!-- PRECIOS MAIN -->
+    <main class="prices-main">
 
-<footer>
-    <p>© 2026 Lavados y Servicios Dry Cleaning</p>
-</footer>
+        <!-- CATEGORÍA: LAVADO -->
+        <div class="price-category" id="lavado">
+            <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-shirt"></i></div>
+                <div>
+                    <div class="category-label">01</div>
+                    <h2>Lavado</h2>
+                </div>
+            </div>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-card-name">Lavado por libra</div>
+                    <div class="price-card-desc">Lavado completo en máquina profesional</div>
+                    <div class="price-card-price"><span class="currency">Q</span>15<span class="unit">/lb</span></div>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-card-badge">Popular</div>
+                    <div class="price-card-name">Lavado + Secado</div>
+                    <div class="price-card-desc">Lavado y secado completo por libra</div>
+                    <div class="price-card-price"><span class="currency">Q</span>20<span class="unit">/lb</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Servicio Express</div>
+                    <div class="price-card-desc">Entrega en el mismo día</div>
+                    <div class="price-card-price"><span class="currency">Q</span>25<span class="unit">/lb</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Lavado Institucional</div>
+                    <div class="price-card-desc">Para empresas, hoteles y negocios</div>
+                    <div class="price-card-price price-consult">Consultar</div>
+                </div>
+            </div>
+        </div>
 
+        <div class="price-divider"></div>
+
+        <!-- CATEGORÍA: PLANCHADO -->
+        <div class="price-category" id="planchado">
+            <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-fire-flame-simple"></i></div>
+                <div>
+                    <div class="category-label">02</div>
+                    <h2>Planchado</h2>
+                </div>
+            </div>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-card-name">Camisa / Blusa</div>
+                    <div class="price-card-desc">Planchado profesional, acabado impecable</div>
+                    <div class="price-card-price"><span class="currency">Q</span>10<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Pantalón</div>
+                    <div class="price-card-desc">Con o sin pliegues, planchado a mano</div>
+                    <div class="price-card-price"><span class="currency">Q</span>10<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Vestido / Traje</div>
+                    <div class="price-card-desc">Planchado especial para prendas delicadas</div>
+                    <div class="price-card-price"><span class="currency">Q</span>20<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-card-badge">Ahorra</div>
+                    <div class="price-card-name">Paquete 10 prendas</div>
+                    <div class="price-card-desc">Planchado de 10 prendas al mejor precio</div>
+                    <div class="price-card-price"><span class="currency">Q</span>85</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-divider"></div>
+
+        <!-- CATEGORÍA: PRENDAS ESPECIALES -->
+        <div class="price-category" id="especiales">
+            <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-bed"></i></div>
+                <div>
+                    <div class="category-label">03</div>
+                    <h2>Prendas Especiales</h2>
+                </div>
+            </div>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-card-name">Edredón individual</div>
+                    <div class="price-card-desc">Lavado profundo para edredón de 1 plaza</div>
+                    <div class="price-card-price"><span class="currency">Q</span>60<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Edredón matrimonial</div>
+                    <div class="price-card-desc">Lavado profundo para edredón de 2 plazas</div>
+                    <div class="price-card-price"><span class="currency">Q</span>80<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Cobija / Manta</div>
+                    <div class="price-card-desc">Lavado y secado completo</div>
+                    <div class="price-card-price"><span class="currency">Q</span>45<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Almohada</div>
+                    <div class="price-card-desc">Lavado y secado, cualquier tamaño</div>
+                    <div class="price-card-price"><span class="currency">Q</span>25<span class="unit">/u</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-divider"></div>
+
+        <!-- CATEGORÍA: MANTELERÍA -->
+        <div class="price-category" id="manteleria">
+            <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-soap"></i></div>
+                <div>
+                    <div class="category-label">04</div>
+                    <h2>Mantelería y Toallas</h2>
+                </div>
+            </div>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-card-name">Mantel pequeño</div>
+                    <div class="price-card-desc">Hasta 4 personas, lavado y planchado</div>
+                    <div class="price-card-price"><span class="currency">Q</span>20<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Mantel grande</div>
+                    <div class="price-card-desc">Más de 6 personas, lavado y planchado</div>
+                    <div class="price-card-price"><span class="currency">Q</span>35<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Servilleta</div>
+                    <div class="price-card-desc">Lavado y planchado por unidad</div>
+                    <div class="price-card-price"><span class="currency">Q</span>5<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-card-badge">Negocios</div>
+                    <div class="price-card-name">Paquete evento</div>
+                    <div class="price-card-desc">Mantelería completa para eventos, precio especial</div>
+                    <div class="price-card-price price-consult">Consultar</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-divider"></div>
+
+        <!-- CATEGORÍA: DRY CLEANING -->
+        <div class="price-category" id="dry">
+            <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-star"></i></div>
+                <div>
+                    <div class="category-label">05</div>
+                    <h2>Dry Cleaning</h2>
+                </div>
+            </div>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-card-name">Camisa / Blusa</div>
+                    <div class="price-card-desc">Limpieza en seco para telas delicadas</div>
+                    <div class="price-card-price"><span class="currency">Q</span>35<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Saco / Blazer</div>
+                    <div class="price-card-desc">Limpieza en seco con acabado profesional</div>
+                    <div class="price-card-price"><span class="currency">Q</span>55<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-card-badge">Premium</div>
+                    <div class="price-card-name">Traje completo</div>
+                    <div class="price-card-desc">Saco + pantalón, tratamiento completo</div>
+                    <div class="price-card-price"><span class="currency">Q</span>90<span class="unit">/u</span></div>
+                </div>
+                <div class="price-card">
+                    <div class="price-card-name">Vestido de noche</div>
+                    <div class="price-card-desc">Cuidado especial para prendas de gala</div>
+                    <div class="price-card-price price-consult">Consultar</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- NOTA FINAL / CTA -->
+    <section class="prices-cta">
+        <div class="prices-cta-inner">
+            <div class="prices-cta-text">
+                <div class="section-label light">¿Tienes dudas?</div>
+                <h2>Precio especial para<br><em>tu negocio</em></h2>
+                <p>Si eres empresa, hotel, restaurante o necesitas servicio continuo, contáctanos para una cotización personalizada sin compromiso.</p>
+            </div>
+            <div class="prices-cta-actions">
+                <a href="https://wa.me/50247481835" class="cta-btn-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Cotizar por WhatsApp
+                </a>
+                <a href="tel:+50223672867" class="cta-btn-call">
+                    <i class="fa-solid fa-phone"></i> Llamar ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Dry Cleaning</div>
+        <p>© 2026 Lavados y Servicios Dry Cleaning · Todos los derechos reservados</p>
+    </footer>
+
+    <!-- FLOTANTES -->
+    <a href="https://wa.me/50247481835" class="float-btn float-wa" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+50223672867" class="float-btn float-call" aria-label="Llamar">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <script src="scrip.js"></script>
 </body>
 </html>
