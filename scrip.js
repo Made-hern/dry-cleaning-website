@@ -61,3 +61,31 @@ document.addEventListener("DOMContentLoaded", () => {
     animTargets.forEach(el => observer.observe(el));
 
 });
+// ===========================
+// ANIMACIONES AL HACER SCROLL
+// Página: Lavado Institucional
+// ===========================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const animTargets = document.querySelectorAll(
+        ".lav-sector-card, .lav-why-item"
+    );
+
+    if (!animTargets.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const delay = entry.target.dataset.delay || 0;
+                setTimeout(() => {
+                    entry.target.classList.add("visible");
+                }, parseInt(delay));
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    animTargets.forEach(el => observer.observe(el));
+
+});
